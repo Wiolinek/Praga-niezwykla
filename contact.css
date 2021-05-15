@@ -1,0 +1,28 @@
+.contact__address {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-row-gap: 5em;
+    padding: .75em 0;
+}
+
+.fa-map-marker-alt, .fa-phone-alt, .fa-at, .fa-facebook {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-right: .6em;
+}
+
+.fa-map-marker-alt {
+    width: 40px;
+}
+
+.contact__address--detail {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: .7em 0;
+}
+
+.contact__address h2 {
+    margin: 0 0 1em 0;
+    text-align: left;
+}
