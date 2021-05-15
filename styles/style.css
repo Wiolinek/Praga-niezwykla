@@ -110,7 +110,7 @@ section p {
 }
 
 .main__image-section {
-    background-image: url('images/back.jpg');
+    background-image: url('../images/back.jpg');
     background-size: cover;
     /* background-attachment: fixed; */
     filter: grayscale(100%);
