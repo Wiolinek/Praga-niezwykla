@@ -175,7 +175,7 @@ footer {
     }
     .header__nav-logo, .fa-bars {
         width: auto;
-        background-color: greenyellow;
+        /* background-color: greenyellow; */
     }
 }
 
