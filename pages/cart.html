@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praga z pudełka</title>
+    <title>Praga Niezwykła</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -25,24 +25,39 @@
     <header class="header">
         <nav>
             <ul class="header__navbar">
-                <li class="header__nav-item"><a href="about.html">O nas</a></li>
-                <li class="header__nav-item"><a href="how-it-works.html">Jak to działa</a></li>
-                <li class="header__nav-item"><a href="../index.html"><img src="../images/logo.png"></a></li>
-                <li class="header__nav-item"><a href="our-boxes.html">Nasze pudełka</a></li>
+                <li class="header__nav-item"><a href="who-we-are.html">Kim jesteśmy</a></li>
+                <li class="header__nav-item"><a href="our-walks.html">Nasze spacery</a></li>
+                <li class="header__nav-item"><a href="our-boxes.html">Czechy z pudełka</a></li>
+                <li class="header__nav-item"><a href="../index.html"><img src="../images/logo.webp"></a></li>
+                <li class="header__nav-item"><a href="my-story.html">Moja historia</a></li>
+                <li class="header__nav-item"><a href="blog.html">Blog</a></li>
                 <li class="header__nav-item"><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="cart">
         <article>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <ul>
-                <li>produkt 1</li>
-                <li>produkt 1</li>
-                <li>produkt 1</li>
-                <li>produkt 1</li>
+            <h1>Podsumowanie zamówienia</h1>
+            <ul class="cart__items-list">
+                <li class="cart__item">produkt 1
+                    <button><i class="fas fa-minus"></i></button>1
+                    <button><i class="fas fa-plus"></i></button>79 PLN
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </li>
+                <li class="cart__item">produkt 2
+                    <button><i class="fas fa-minus"></i></button>0
+                    <button><i class="fas fa-plus"></i></button>99 PLN
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </li>
             </ul>
-            <div class="cart__send-order"><button><i class="fas fa-paper-plane"></i>WYŚLIJ ZAMÓWIENIE</button></div>
+            <!-- <div class="cart__send-order"><button><i class="fas fa-paper-plane"></i>WYŚLIJ ZAMÓWIENIE</button></div> -->
+            <div class="cart__buttons-section">
+                <div class="cart__back-to-products"><button><a href="our-boxes.html">PRZEGLĄDAJ DALEJ</a></button></div>
+                <div class="cart__send-order"><button>WYŚLIJ ZAMÓWIENIE</button></div>
+            </div>
+            <form>
+                <label><input type="email"></label>
+            </form>
         </article> 
     </section>
     <footer>Stopka</footer>

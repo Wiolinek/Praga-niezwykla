@@ -7,15 +7,21 @@
     /* --primary-font-family: 'Lobster Two', cursive; */
     /* --primary-font-family: 'Pattaya', sans-serif; */
     /* --primary-font-family: 'Berkshire Swash', cursive; */
+    /* --primary-font-family: 'IM Fell DW Pica', serif; */
+    /* --primary-font-family: 'Pirata One', cursive; */
+    /* --primary-font-family: 'Yatra One', cursive; */
+    /* --primary-font-family: 'Nova Slim', cursive; */
+    /* --primary-font-family: 'Arima Madurai', cursive; */
+    /* --primary-font-family: 'Amita', cursive; */
 
     --secondary-font-family: black; 
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 section {
@@ -27,7 +33,7 @@ section {
 }
 
 section h1 {
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-family: var(--primary-font-family);
     font-weight: 500;
     /* color: var(--secondary-color); */
@@ -38,7 +44,7 @@ section h1 {
 }
 
 section h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-family: var(--primary-font-family);
     font-weight: 500;
     /* color: var(--secondary-color); */
@@ -48,7 +54,7 @@ section h2 {
 }
 
 section p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: var(--primary-font-family);
     font-weight: 300;
     line-height: 1.7em;
@@ -66,6 +72,7 @@ section p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* align-items: flex-end; */
     /* position: fixed; */
     /* top: 0; */
     /* left: 0; */
@@ -74,32 +81,32 @@ section p {
     z-index: 2;
 }
 
-.header__nav-item {
+.header__nav-item, .header__nav-logo, .fa-bars {
     list-style: none;
     padding: 1em;
     border-bottom: 2px solid transparent;
+    width: 14%;
     /* background-color: greenyellow; */
 }
 
-.header__nav-item a {
-    font-size: 2em;
+.header__nav-item a, .header__nav-logo a, .header__nav-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
     font-family: var(--primary-font-family);
     font-weight: 700;
     /* color: var(--secondary-color); */
     color: black;
     text-decoration: none;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.header__nav-item img {
+.header__nav-logo img {
     width: 230px;
     color: 2px solid var(--secondary-color);
 }
 
-.cart {
+.cart-icon {
     position: fixed;
     bottom: 11vh;
     right: 3vw;
@@ -107,6 +114,7 @@ section p {
 .fa-shopping-basket {
     color: var(--secondary-color);
     font-size: 3em;
+    /* background-color: red; */
 }
 
 .main__image-section {
@@ -139,4 +147,64 @@ footer {
 .active {
     /* border-bottom: 2px solid black; */
     border-bottom: 2px solid var(--secondary-color);
+}
+
+.header__nav-menu i {
+    font-size: 1.8em;
+    display: none;
+}
+
+@media (min-width: 1281px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1280px) {
+    * {
+        font-size: 15px;
+    }
+    .header__nav-item {
+        display: none;
+    }
+    .header__nav-menu i {
+        display: flex; 
+    }
+    .header__navbar {
+        justify-content: space-between;
+    }
+    .header__nav-logo, .fa-bars {
+        width: auto;
+        background-color: greenyellow;
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+    * {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    * {
+        font-size: 10px;
+    }
 }

@@ -15,6 +15,10 @@
     width: 40px;
 }
 
+.fa-facebook {
+    padding: .28em 0;
+}
+
 .contact__address--detail {
     display: flex;
     justify-content: left;

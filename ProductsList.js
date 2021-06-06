@@ -1,0 +1,38 @@
+import productsData from './productsData.js';
+
+const ProductsList = {
+
+    addToCart: () => {
+        document.getElementById("add-to-cart-btn").addEventListener("click",
+        (e) => {
+            console.log(e.target.value)
+        })
+    },
+ 
+	render: () => {
+
+		const products = productsData.productsData;
+
+		return `<ul class="boxes__boxes-list">
+                ${products.map(product =>
+                    `<li key="${product.id}" class="boxes__box-item">
+                        <div class="boxes__box-photo" style>
+                            <img src="${product.photo}"></img>
+                        </div>
+                        <div class="boxes__box-description">
+                            <h2>${product.name}</h2>
+                            <p>${product.description}</p>
+                            <div class="boxes__box-price"><p>${product.price} PLN</p>
+                                <button id="add-to-cart-btn">ZAMÓW</button>
+                            </div>
+                        </div>
+                    </li>`
+                )}
+            </ul>
+        `;
+	}
+}
+
+
+
+export default ProductsList;

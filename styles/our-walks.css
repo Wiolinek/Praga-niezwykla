@@ -1,45 +1,52 @@
-.boxes__boxes-list {
+.walks__walks-list {
     /* background-color: red; */
     display: grid;
     grid-template-columns: minmax(400px, 1fr);
     /* grid-auto-rows: 550px; */
-    grid-gap: 8em;
+    grid-gap: 16em;
     justify-content: center;
+    /* align-items: center; */
     margin-top: 17vh;
 }
 
-.boxes__box-item {
+.walks__walk-item {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, .5fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, .6fr));
     /* grid-template-rows: repeat(auto-fit, minmax(550px, 1fr)); */
     grid-auto-rows: min-content;
     grid-gap: 2em;
     justify-content: center;
-    /* align-items: center; */
+    /* align-items: space-around; */
 }
 
-.boxes__box-photo {
+.walks__walk-photo {
     /* background-color: pink; */
     /* text-align: center; */
 }
 
-.boxes__box-photo img {
+.walks__walk-photo img {
     width: 470px;
     object-fit: none;
     object-position: right bottom;
+    /* align-self: flex-start; */
 }
 
-.boxes__box-description {
+.walks__walk-description {
     /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1em;
+    padding: 1.5em 0;
+    /* padding: 1em; */
     border-top:  2px solid var(--secondary-color);
 }
 
-.boxes__box-description button {
+.walks__walk-description h2 {
+    margin-top: 1em;
+}
+
+.walks__walk-description button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +64,28 @@
     align-self: flex-end;
 }
 
-.boxes__box-price {
+.walks__walk-details-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.walks__walk-dates {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.walks__walk-dates div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    padding: 0 1.5em;
+    margin: 1em;
+    border: 2px dotted black;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* align-self: flex-end; */
 }
