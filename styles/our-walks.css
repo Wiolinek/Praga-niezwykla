@@ -20,19 +20,19 @@
     /* align-items: space-around; */
 }
 
-.walks__walk-photo {
+.walks__walk-item--photo {
     /* background-color: pink; */
     /* text-align: center; */
 }
 
-.walks__walk-photo img {
+.walks__walk-item--photo img {
     width: 470px;
-    object-fit: none;
+    /* object-fit: none; */
     object-position: right bottom;
     /* align-self: flex-start; */
 }
 
-.walks__walk-description {
+.walks__walk-item--description {
     /* background-color: green; */
     display: flex;
     flex-direction: column;
@@ -42,11 +42,11 @@
     border-top:  2px solid var(--secondary-color);
 }
 
-.walks__walk-description h2 {
+.walks__walk-item--description h2 {
     margin-top: 1em;
 }
 
-.walks__walk-description button {
+.walks__walk-item--description button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,20 +64,21 @@
     align-self: flex-end;
 }
 
-.walks__walk-details-price {
+.walks__walk-item--time-details {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
-.walks__walk-dates {
+.walks__walk-item--dates {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.walks__walk-dates div {
+.walks__walk-item--dates div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,4 +89,11 @@
     /* text-align: center; */
     /* vertical-align: middle; */
     /* align-self: flex-end; */
+}
+
+.walks__walk-item--price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
 }
