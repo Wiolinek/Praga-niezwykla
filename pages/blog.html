@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
 
     <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/blog.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cd128beae1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,10 +28,11 @@
                 <li class="header__nav-item"><a href="who-we-are.html">Kim jesteśmy</a></li>
                 <li class="header__nav-item"><a href="our-walks.html">Nasze spacery</a></li>
                 <li class="header__nav-item"><a href="our-boxes.html">Czechy z pudełka</a></li>
-                <li class="header__nav-item"><a href="../index.html"><img src="../images/logo.webp"></a></li>
+                <li class="header__nav-logo"><a href="../index.html"><img src="../images/logo_bez_tla1.webp"></a></li>
                 <li class="header__nav-item"><a href="my-story.html">Moja historia</a></li>
                 <li class="header__nav-item active"><a href="blog.html">Blog</a></li>
                 <li class="header__nav-item"><a href="contact.html">Kontakt</a></li>
+                <li class="header__nav-menu"><i class="fas fa-bars"></i></li> 
             </ul>
         </nav>
     </header>
@@ -40,11 +42,55 @@
         </div>
     </aside>
     <section class="intro">
-        <h1>Blog</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora commodi dolores aliquam numquam, delectus impedit laborum ullam et iusto? Cumque veniam voluptates dolorem sunt minima consequuntur ratione! Culpa eos tempora quis vitae, officiis exercitationem quia ratione voluptates, odit ex optio similique iure asperiores blanditiis porro autem, voluptas ipsam necessitatibus recusandae? Ducimus, eius. Commodi, quae eum. Perferendis quis, libero facere, vitae recusandae quaerat facilis cum debitis aliquam aperiam dignissimos voluptatum rerum, nostrum porro molestias laudantium accusantium! Ea asperiores libero dolor velit nobis inventore sequi, nam voluptas quam possimus molestiae in fugiat tempore dignissimos, ab doloribus eos provident itaque sint delectus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora commodi dolores aliquam numquam, delectus impedit laborum ullam et iusto? Cumque veniam voluptates dolorem sunt minima consequuntur ratione! Culpa eos tempora quis vitae, officiis exercitationem quia ratione voluptates, odit ex optio similique iure asperiores blanditiis porro autem, voluptas ipsam necessitatibus recusandae? Ducimus, eius. Commodi, quae eum. Perferendis quis, libero facere, vitae recusandae quaerat facilis cum debitis aliquam aperiam dignissimos voluptatum rerum, nostrum porro molestias laudantium accusantium! Ea asperiores libero dolor velit nobis inventore sequi, nam voluptas quam possimus molestiae in fugiat tempore dignissimos, ab doloribus eos provident itaque sint delectus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora commodi dolores aliquam numquam, delectus impedit laborum ullam et iusto? Cumque veniam voluptates dolorem sunt minima consequuntur ratione! Culpa eos tempora quis vitae, officiis exercitationem quia ratione voluptates, odit ex optio similique iure asperiores blanditiis porro autem, voluptas ipsam necessitatibus recusandae? Ducimus, eius. Commodi, quae eum. Perferendis quis, libero facere, vitae recusandae quaerat facilis cum debitis aliquam aperiam dignissimos voluptatum rerum, nostrum porro molestias laudantium accusantium! Ea asperiores libero dolor velit nobis inventore sequi, nam voluptas quam possimus molestiae in fugiat tempore dignissimos, ab doloribus eos provident itaque sint delectus!</p>
+        <article>
+            <h1>Blog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora commodi dolores aliquam numquam, delectus impedit laborum ullam et iusto? Cumque veniam voluptates dolorem sunt minima consequuntur ratione! Culpa eos tempora quis vitae, officiis exercitationem quia ratione voluptates, odit ex optio similique iure asperiores blanditiis porro autem, voluptas ipsam necessitatibus recusandae?</p>
+        </article>
+        <article class="my-story">
+            <div class="my-story__part--text">
+                <h2>Tytuł</h2>
+                <div>
+                    <p>21.03.2021</p>
+                </div>
+                <div>
+                    <img src="../images/kniha.jpg"></img>
+                    <p>Nastoletni - Ja, szkoła średnia, język polski, a na nim magister Maria Goleń (pozdrawiam ją serdecznie z tego miejsca), puszczając nam na nim najróżniejsze filmy powstałe na podstawie książek.
+                    Jednym z takich filmów był czeski obraz Miloša Formana - " Pociągi pod specjalnym nadzorem" (org. Ostře sledované vlaky), na podstawie powieści Bohumila Hrabala. Po jego obejrzeniu, wszystko się zaczęło - czytanie książek czeskich autorów, oglądanie czeskich filmów, fascynacja czeską kulturą - Czechami w ogóle! I wtedy powstała deklaracja: "kiedyś zamieszkam w Czechach, nie wiem kiedy, nie wiem na jak długo, ale zrobię to!"</p>
+                </div>
+            </div>
+            <div class="my-story__part--photo">
+                <img src="../images/kniha.jpg"></img>
+            </div>
+        </article>
+        <article class="my-story">
+            <div class="my-story__part--text">
+                <h2>Tytuł</h2>
+                <p>Nastoletni - Ja, szkoła średnia, język polski, a na nim magister Maria Goleń (pozdrawiam ją serdecznie z tego miejsca), puszczając nam na nim najróżniejsze filmy powstałe na podstawie książek.</p>       
+                <p>Jednym z takich filmów był czeski obraz Miloša Formana - " Pociągi pod specjalnym nadzorem" (org. Ostře sledované vlaky), na podstawie powieści Bohumila Hrabala. Po jego obejrzeniu, wszystko się zaczęło - czytanie książek czeskich autorów, oglądanie czeskich filmów, fascynacja czeską kulturą - Czechami w ogóle! I wtedy powstała deklaracja: "kiedyś zamieszkam w Czechach, nie wiem kiedy, nie wiem na jak długo, ale zrobię to!"</p>
+            </div>
+            <div class="my-story__part--photo">
+                <img src="../images/kniha.jpg"></img>
+            </div>
+        </article>
+        <article>
+            <div class="my-story__part--text">
+                <p>I zrobiłem, co prawda kilkanaście lat później ale jednak i - zamieszkałem w Czechach i nie zamierzam tej przygody przerywać :)</p>
+                <p>Tym bardziej po cudach jakich tu zaznałem - jednym z miasteczek w jakich mieszkałem, były podpraskie Loděnice. Spacerując po tym małym czeskim miasteczku, wyciętym jakby żywcem z jakiejś Hrabalowej powieści, na stacji kolejowej natrafiłem na tablicę o takiej treści: Na tej stacji kolejowej w roku 1968 kręcono, nagrodzony Oscarem film Miloša Formana, na podstawie powieści Bohumila Hrabala "Ostré sledované vlaky".</p>
+            </div>
+            <div class="my-story__part--photo">
+                <img src="../images/ostre-sledovane-vlaky.jpg"></img>
+            </div>
+        </article>
+        <article>
+            <div class="my-story__part--text">
+                <p>Dziś mieszkając w Pradze, odkrywam to miasto jak też całe Czechy, każdego dnia na nowo. I ta przygoda zdaje się nie mieć końca. To bardzo piękna przygoda, do której zapraszam też Ciebie - nieznajomy (jeszcze) czytelniku tych słów. Moimi odkryciami dzielę się na autorskich spacerach (odnośnik do zakładki Nasze spacery).</p> 
+                <p>Do zobaczenia! :)</p>
+            </div>
+            <div class="my-story__part--photo">
+                <img src="../images/hubert.jpg"></img>
+            </div>
+        </article>
     </section>
-    <footer>Stopka</footer>
+    <footer>Wszelkie prawa zastrzeżone</footer>
 </body>
 </html>
