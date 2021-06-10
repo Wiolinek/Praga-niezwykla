@@ -23,13 +23,35 @@
 .walks__walk-item--photo {
     /* background-color: pink; */
     /* text-align: center; */
+    
 }
 
 .walks__walk-item--photo img {
-    width: 470px;
+    /* width: 470px; */
+    /* height: 100%; */
     /* object-fit: none; */
-    object-position: right bottom;
+    /* object-position: right bottom; */
     /* align-self: flex-start; */
+}
+
+.walks__walk-item--photo-container {
+    width: 470px;
+    height: 700px;
+    object-fit: none;
+    background-size: cover;
+    /* object-position: right bottom; */
+    /* align-self: flex-start; */
+    position: relative
+}
+
+.walks__walk-item--photo-container::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 2px solid var(--secondary-color);
 }
 
 .walks__walk-item--description {
@@ -46,7 +68,7 @@
     margin-top: 1em;
 }
 
-.walks__walk-item--description button {
+.walks__walk-item--reserve-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,12 +108,9 @@
     padding: 0 1.5em;
     margin: 1em;
     border: 2px dotted black;
-    /* text-align: center; */
-    /* vertical-align: middle; */
-    /* align-self: flex-end; */
 }
 
-.walks__walk-item--price{
+.walks__walk-item--price {
     display: flex;
     justify-content: space-between;
     align-items: center;

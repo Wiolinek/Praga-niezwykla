@@ -19,16 +19,36 @@
     /* align-items: center; */
 }
 
+.boxes__box-item--photo-container {
+    width: 470px;
+    height: 700px;
+    object-fit: none;
+    background-size: cover;
+    object-position: right bottom;
+    /* align-self: flex-start; */
+    position: relative
+}
+
+.boxes__box-item--photo-container::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 2px solid var(--secondary-color);
+}
+
 .boxes__box-photo {
     /* background-color: pink; */
     /* text-align: center; */
 }
 
-.boxes__box-photo img {
+/* .boxes__box-photo img {
     width: 470px;
     object-fit: none;
     object-position: right bottom;
-}
+} */
 
 .boxes__box-description {
     /* background-color: green; */

@@ -16,8 +16,9 @@ const ProductsList = {
 		return `<ul class="boxes__boxes-list">
                 ${products.map(product =>
                     `<li key="${product.id}" class="boxes__box-item">
-                        <div class="boxes__box-photo" style>
-                            <img src="${product.photo}"></img>
+                        <div class="boxes__box-photo">
+                            <div class="boxes__box-item--photo-container" style="background: url('../${product.photo}')">
+                            </div>
                         </div>
                         <div class="boxes__box-description">
                             <h2>${product.name}</h2>

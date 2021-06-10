@@ -18,20 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
 
-    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/style_1.css" rel="stylesheet">
     <link href="../styles/our-walks.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav>
+            <div class="header__logo">
+                <a href="../index.html"><img src="../images/logo_bez_tla1.webp"></a>
+            </div>
             <ul class="header__navbar">
-                <li class="header__nav-item"><a href="who-we-are.html">Kim jesteśmy</a></li>
-                <li class="header__nav-item active"><a href="our-walks.html">Nasze spacery</a></li>
-                <li class="header__nav-item"><a href="our-boxes.html">Czechy z pudełka</a></li>
-                <li class="header__nav-logo"><a href="../index.html"><img src="../images/logo_bez_tla1.webp"></a></li>
-                <li class="header__nav-item"><a href="my-story.html">Moja historia</a></li>
-                <li class="header__nav-item"><a href="blog.html">Blog</a></li>
-                <li class="header__nav-item"><a href="contact.html">Kontakt</a></li>
+                <li class="header__nav-item"><a href="../pages/who-we-are.html">Kim jesteśmy</a></li>
+                <li class="header__nav-item"><a href="../pages/our-walks.html">Nasze spacery</a></li>
+                <li class="header__nav-item"><a href="../pages/our-boxes.html">Czechy z pudełka</a></li>
+                <li class="header__nav-item"><a href="../pages/my-story.html">Moja historia</a></li>
+                <li class="header__nav-item"><a href="../pages/blog.html">Blog</a></li>
+                <li class="header__nav-item"><a href="../pages/contact.html">Kontakt</a></li>
                 <li class="header__nav-menu"><i class="fas fa-bars"></i></li> 
             </ul>
         </nav>
@@ -49,8 +51,10 @@
         <article class="walks">
             <ul class="walks__walks-list">
                 <li class="walks__walk-item">
-                    <div class="walks__walk-item--photo" style>
-                        <img src="../images/walk_4.jpg"></img>
+                    <div class="walks__walk-item--photo">
+                        <div class="walks__walk-item--photo-container" style="background: url('../images/walk_4.jpg')">
+                            <!-- <img src="../images/walk_4.jpg"></img> -->
+                        </div>
                     </div>
                     <div class="walks__walk-item--description">
                         <h2>Kawiarnianym szlakiem praskiej bohemy</h2>
@@ -75,13 +79,15 @@
                             </div>
                         </div>
                         <div class="walks__walk-item--price"><p>100 PLN</p>
-                            <button id="add-to-cart-btn">REZERWACJA</button>
+                            <button class="walks__walk-item--reserve-btn">REZERWACJA</button>
                         </div>
                     </div>
                 </li>
                 <li class="walks__walk-item">
                     <div class="walks__walk-item--photo" style>
-                        <img src="../images/walk_2.jpg"></img>
+                        <div class="walks__walk-item--photo-container" style="background: url('../images/walk_2.jpg')">
+                        <!-- <img src="../images/walk_2.jpg"></img> -->
+                        </div>
                     </div>
                     <div class="walks__walk-item--description">
                         <h2>Smakowitym szlakiem chlebíčků, czyli jak (nie)zwykłe kanapki zapisały się do czeskich dziejów</h2>
@@ -103,13 +109,15 @@
                             </div>
                         </div>
                         <div class="walks__walk-item--price"><p>100 PLN</p>
-                            <button id="add-to-cart-btn">REZERWACJA</button>
+                            <button class="walks__walk-item--reserve-btn">REZERWACJA</button>
                         </div>
                     </div>
                 </li>
                 <li class="walks__walk-item">
-                    <div class="walks__walk-item--photo" style>
-                        <img src="../images/walk_5.jpg"></img>
+                    <div class="walks__walk-item--photo">
+                        <div class="walks__walk-item--photo-container" style="background: url('../images/walk_5.jpg')">
+                            <!-- <img src="../images/walk_5.jpg"></img> -->
+                        </div>
                     </div>
                     <div class="walks__walk-item--description">
                         <h2>Piwnym szlakiem praskich "czwórek"</h2>
@@ -132,13 +140,15 @@
                             </div>
                         </div>
                         <div class="walks__walk-item--price"><p>100 PLN</p>
-                            <button id="add-to-cart-btn">REZERWACJA</button>
+                            <button class="walks__walk-item--reserve-btn">REZERWACJA</button>
                         </div>
                     </div>
                 </li>
                 <li class="walks__walk-item">
-                    <div class="walks__walk-item--photo" style>
-                        <img src="../images/walk_6.jpg"></img>
+                    <div class="walks__walk-item--photo">
+                        <div class="walks__walk-item--photo-container" style="background: url('../images/walk_6.jpg')">
+                            <!-- <img src="../images/walk_6.jpg"></img> -->
+                        </div>
                     </div>
                     <div class="walks__walk-item--description">
                         <h2>Libeňski Slalom czyli Hrabal, piwo i nie tylko</h2>
@@ -162,7 +172,7 @@
                             </div>
                         </div>
                         <div class="walks__walk-item--price"><p>100 PLN</p>
-                            <button id="add-to-cart-btn">REZERWACJA</button>
+                            <button class="walks__walk-item--reserve-btn">REZERWACJA</button>
                         </div>
                     </div>
                 </li>
