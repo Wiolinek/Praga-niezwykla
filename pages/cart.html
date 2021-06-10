@@ -17,21 +17,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
 
-    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/style_1.css" rel="stylesheet">
     <link href="../styles/cart.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cd128beae1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <nav>
+            <div class="header__logo">
+                <a href="../index.html"><img src="../images/logo_bez_tla1.webp"></a>
+            </div>
             <ul class="header__navbar">
-                <li class="header__nav-item"><a href="who-we-are.html">Kim jesteśmy</a></li>
-                <li class="header__nav-item"><a href="our-walks.html">Nasze spacery</a></li>
-                <li class="header__nav-item"><a href="our-boxes.html">Czechy z pudełka</a></li>
-                <li class="header__nav-item"><a href="../index.html"><img src="../images/logo.webp"></a></li>
-                <li class="header__nav-item"><a href="my-story.html">Moja historia</a></li>
-                <li class="header__nav-item"><a href="blog.html">Blog</a></li>
-                <li class="header__nav-item"><a href="contact.html">Kontakt</a></li>
+                <li class="header__nav-item"><a href="../pages/who-we-are.html">Kim jesteśmy</a></li>
+                <li class="header__nav-item"><a href="../pages/our-walks.html">Nasze spacery</a></li>
+                <li class="header__nav-item"><a href="../pages/our-boxes.html">Czechy z pudełka</a></li>
+                <li class="header__nav-item"><a href="../pages/my-story.html">Moja historia</a></li>
+                <li class="header__nav-item"><a href="../pages/blog.html">Blog</a></li>
+                <li class="header__nav-item"><a href="../pages/contact.html">Kontakt</a></li>
+                <li class="header__nav-menu"><i class="fas fa-bars"></i></li> 
             </ul>
         </nav>
     </header>
@@ -39,15 +42,25 @@
         <article>
             <h1>Podsumowanie zamówienia</h1>
             <ul class="cart__items-list">
-                <li class="cart__item">produkt 1
-                    <button><i class="fas fa-minus"></i></button>1
-                    <button><i class="fas fa-plus"></i></button>79 PLN
-                    <button><i class="fas fa-trash-alt"></i></button>
+                <li class="cart__item">
+                    <p>Kostka Cukru, czyli osłódź sobie życie</p>
+                    <div class="cart__item--quantities">
+                        <button><i class="fas fa-minus"></i></button>
+                        <p>1</p>
+                        <button><i class="fas fa-plus"></i></button>
+                        <p>79 PLN</p>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </div> 
                 </li>
-                <li class="cart__item">produkt 2
-                    <button><i class="fas fa-minus"></i></button>0
-                    <button><i class="fas fa-plus"></i></button>99 PLN
-                    <button><i class="fas fa-trash-alt"></i></button>
+                <li class="cart__item">
+                    <p>Kde Domov Můj, czyli to co dała czeska ziemia</p>
+                    <div class="cart__item--quantities">
+                        <button><i class="fas fa-minus"></i></button>
+                        <p>2</p>
+                        <button><i class="fas fa-plus"></i></button>
+                        <p>99 PLN</p>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </div> 
                 </li>
             </ul>
             <!-- <div class="cart__send-order"><button><i class="fas fa-paper-plane"></i>WYŚLIJ ZAMÓWIENIE</button></div> -->
@@ -56,10 +69,10 @@
                 <div class="cart__send-order"><button>WYŚLIJ ZAMÓWIENIE</button></div>
             </div>
             <form>
-                <label><input type="email"></label>
+                <!-- <label><input type="email"></label> -->
             </form>
         </article> 
     </section>
-    <footer>Stopka</footer>
+    <footer>Wszelkie prawa zastrzeżone</footer>
 </body>
 </html>
