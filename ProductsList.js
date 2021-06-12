@@ -24,7 +24,7 @@ const ProductsList = {
                             <h2>${product.name}</h2>
                             <p>${product.description}</p>
                             <div class="boxes__box-price"><p>${product.price} PLN</p>
-                                <button id="add-to-cart-btn">ZAMÓW</button>
+                                <button class="add-to-cart-btn">ZAMÓW</button>
                             </div>
                         </div>
                     </li>`
