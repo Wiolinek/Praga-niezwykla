@@ -22,7 +22,10 @@ Project will be published on Wordpress platform to make administrate changes pos
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![](public/main.png)
+![](public/walks.png)
+![](public/boxes.png)
+![](public/blog.png)
 
 
 ## Project Status
