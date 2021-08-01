@@ -45,6 +45,11 @@
     padding: 1.8em 1em 1em 1em;
 }
 
+.post__main img {
+    float: left;
+    margin-right: 1.5rem;
+}
+
 .post__read-more-section {
     display: flex;
     flex-direction: row;
