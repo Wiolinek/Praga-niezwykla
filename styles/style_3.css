@@ -1,14 +1,7 @@
 :root {
-    /* --primary-color: #422B26; */
     --primary-color: #0C1C2F;
-    /* --secondary-color: rgb(227, 140, 0); */
-    /* --secondary-color: #F08927; */
     --secondary-color: #959595;
     --primary-font-family: 'Texturina', serif;
-    /* --primary-font-family: 'Lobster Two', cursive; */
-    /* --primary-font-family: 'Pattaya', sans-serif; */
-    /* --primary-font-family: 'Berkshire Swash', cursive; */
-
     --secondary-font-family: black;
     
 }
