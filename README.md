@@ -31,6 +31,12 @@ Project will be published on Wordpress platform to make administrate changes pos
 ## Project Status
 Project is: _in progress_
 
+## Room for Improvement
+- animations
+- smedia queries
+- placing project to Wordpress platform
+- add Woocommerce plugin
+
 
 ## Contact
 Created by [@Wiolinek](https://www.u-v.codes) - feel free to contact me!
