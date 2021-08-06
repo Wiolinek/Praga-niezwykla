@@ -1,4 +1,4 @@
-import productsData from './productsData.js';
+import productsData from '/Praga-niezwykla/productsData.js';
 
 const ProductsList = {
 
@@ -17,7 +17,7 @@ const ProductsList = {
                 ${products.map(product =>
                     `<li key="${product.id}" class="boxes__box-item">
                         <div class="boxes__box-photo">
-                            <div class="boxes__box-item--photo-container" style="background: url('../${product.photo}')">
+                            <div class="boxes__box-item--photo-container" style="background: url('/Praga-niezwykla/images/${product.photo}')">
                             </div>
                         </div>
                         <div class="boxes__box-description">
