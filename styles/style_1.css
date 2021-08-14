@@ -237,6 +237,8 @@ footer {
 	align-items: center;
 	font-family: var(--primary-font-family);
 	color: var(--secondary-color);
+	padding: 1em;
+	text-align: center;
 }
 
 .active {

@@ -1,18 +1,15 @@
 .contact__address {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-	grid-row-gap: 5em;
+	grid-template-columns: repeat(2, minmax(500px, 1fr));
+	grid-gap: 5em;
 	padding: .75em 0;
 }
 
 .fa-map-marker-alt, .fa-phone-alt, .fa-at, .fa-facebook {
 	font-size: 2.5em;
 	color: var(--secondary-color);
-	margin-right: .6em;
-}
-
-.fa-map-marker-alt {
-	width: 40px;
+	margin-right: 1em;
+	width: 20px;
 }
 
 .fa-facebook {
@@ -29,4 +26,40 @@
 .contact__address h2 {
 	margin: 0 0 1em 0;
 	text-align: left;
+}
+
+@media (max-width: 1640px) {
+	.contact__address {
+		grid-template-columns: repeat(2, minmax(300px, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.contact__address {
+		grid-template-columns: repeat(2, minmax(250px, 1fr));
+	}
+}
+
+@media (max-width: 640px) {
+	.contact__address {
+		grid-template-columns: 400px;
+	}
+}
+
+@media (max-width: 460px) {
+	.contact__address {
+		grid-template-columns: 300px;
+	}
+}
+
+@media (max-width: 320px) {
+	.contact__address {
+		grid-template-columns: 240px;
+	}
+}
+
+@media (max-width: 250px) {
+	.contact__address {
+		grid-template-columns: 200px;
+	}
 }
