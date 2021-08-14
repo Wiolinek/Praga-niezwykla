@@ -6,22 +6,19 @@ It is also a online store where visitor can order misteourous boxes with czech p
 
 Project will be published on Wordpress platform to make administrate changes possible for client by himself.
 
-
 > Live demo [_here_](https://wiolinek.github.io/Praga-niezwykla/).
-
 
 ## Table of Contents
 
-* [Technologies Used](#technologies-used)
-* [Screenshots](#screenshots)
-* [Project Status](#project-status)
-* [Contact](#contact)
-
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Project Status](#project-status)
+- [License](#license)
+- [Contact](#contact)
 
 ## Technologies Used
 
 - BEM
-
 
 ## Screenshots
 
@@ -29,7 +26,6 @@ Project will be published on Wordpress platform to make administrate changes pos
 ![](walks.png)
 ![](boxes.png)
 ![](blog.png)
-
 
 ## Project Status
 
