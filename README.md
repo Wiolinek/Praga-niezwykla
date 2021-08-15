@@ -34,7 +34,6 @@ Project is: _in progress_
 ## Room for Improvement
 
 - animations
-- media queries
 - placing project to Wordpress platform
 - add Woocommerce plugin
 
