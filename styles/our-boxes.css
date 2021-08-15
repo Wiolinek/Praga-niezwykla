@@ -1,10 +1,9 @@
 .boxes__boxes-list {
-	/* background-color: red; */
 	display: grid;
 	grid-template-columns: minmax(400px, 1fr);
-	/* grid-auto-rows: 550px; */
 	grid-gap: 8em;
 	justify-content: center;
+	align-items: center;
 	margin-top: 17vh;
 }
 
@@ -12,11 +11,9 @@
 	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, .5fr));
-	/* grid-template-rows: repeat(auto-fit, minmax(550px, 1fr)); */
 	grid-auto-rows: min-content;
 	grid-gap: 2em;
 	justify-content: center;
-	/* align-items: center; */
 }
 
 .boxes__box-item--photo-container {
@@ -25,7 +22,6 @@
 	object-fit: none;
 	background-size: cover;
 	object-position: right bottom;
-	/* align-self: flex-start; */
 	position: relative
 }
 
@@ -40,7 +36,6 @@
 }
 
 .boxes__box-description {
-	/* background-color: green; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -83,4 +78,84 @@ a.add-to-cart-btn{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+
+@media (min-width: 1641px) {
+
+}
+
+@media (max-width: 1640px) {
+
+}
+
+@media (min-width: 1281px) {
+
+}
+
+@media (max-width: 1280px) {
+	.boxes__box-item--photo-container {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+	.boxes__boxes-list {
+		grid-template-columns: minmax(400px, 1fr);
+	}
+	.boxes__box-item {
+		grid-template-columns: repeat(auto-fit, minmax(400px, .6fr));
+	}
+	.boxes__box-item--photo-container {
+		width: 400px;
+		height: 560px;
+	}
+
+}
+
+@media (max-width: 460px) {
+	.boxes__boxes-list {
+		grid-template-columns: minmax(280px, 1fr);
+	}
+	.boxes__box-item{
+		grid-template-columns: repeat(auto-fit, minmax(280px, .6fr));
+	}
+	.boxes__box-item--photo-container {
+		width: 280px;
+		height: 420px;
+	}
+}
+
+@media (max-width: 320px) {
+	.boxes__boxes-list {
+		grid-template-columns: minmax(220px, 1fr);
+	}
+	.boxes__box-item {
+		grid-template-columns: repeat(auto-fit, minmax(220px, .6fr));
+	}
+	.boxes__box-item--photo-container {
+		width: 220px;
+		height: 330px;
+	}
+}
+
+@media (max-width: 250px) {
+	.boxes__boxes-list {
+		grid-template-columns: minmax(200px, 1fr);
+	}
+	.boxes__box-item {
+		grid-template-columns: repeat(auto-fit, minmax(200px, .6fr));
+	}
+	.boxes__box-item--photo-container {
+		width: 200px;
+		height: 300px;
+	}
 }

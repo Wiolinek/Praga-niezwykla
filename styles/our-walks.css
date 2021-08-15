@@ -14,7 +14,6 @@
 	grid-auto-rows: min-content;
 	grid-gap: 2em;
 	justify-content: center;
-	/* align-items: center; */
 }
 
 .walks__walk-item--photo-container {
@@ -116,7 +115,6 @@
 	.walks__walk-item--photo-container {
 		margin: 0 auto;
 	}
-
 }
 
 @media (max-width: 1024px) {
@@ -138,7 +136,6 @@
 		width: 400px;
 		height: 560px;
 	}
-
 }
 
 @media (max-width: 460px) {
