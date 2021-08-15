@@ -43,6 +43,10 @@
 	border-top:  2px solid var(--secondary-color);
 }
 
+.boxes__box-description p {
+	padding: .5em;
+}
+
 .add-to-cart-btn {
 	display: flex;
 	align-items: center;
@@ -78,6 +82,7 @@ a.add-to-cart-btn{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 1.6rem;
 }
 
 
