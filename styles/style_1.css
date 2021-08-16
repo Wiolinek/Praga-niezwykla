@@ -156,7 +156,6 @@ nav {
 	padding: .3em;
 }
 
-
 .main__advantages {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(500px, .6fr));
@@ -209,7 +208,7 @@ nav {
 	background-color: var(--secondary-color);
 }
 
-.main__attractions {
+.main__attractions, .main__opinions {
 	display: grid;
 	align-content: center;
 	justify-content: space-evenly;
@@ -233,6 +232,45 @@ nav {
 	font-weight: 700;
 }
 
+.main__opinions-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 1rem;
+	position: relative;
+}
+
+.main__opinions-item::before {
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: FontAwesome;
+	font-size: 7em;
+	content: "\f10e";
+	background-color: var(--secondary-color);
+	padding: .2em;
+	opacity: .2;
+}
+
+.main__opinions-item--text {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.main__opinions-item--name {
+	align-self: flex-end;
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.main__opinions {
+	flex-direction: row;
+}
 
 footer {
 	display: flex;
@@ -261,14 +299,14 @@ footer {
 }
 
 @media (min-width: 1641px) {
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: repeat(3, 410px);
 		grid-auto-rows: 410px;
 	}
 }
 
 @media (max-width: 1640px) {
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: repeat(3, 380px);
 		grid-auto-rows: 380px;
 	}
@@ -296,7 +334,7 @@ footer {
 	.header__nav-logo, .fa-bars {
 		width: auto;
 	}
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: 400px;
 		grid-auto-rows: 400px;
 	}
@@ -359,7 +397,7 @@ footer {
 	.main__advantages {
 		grid-template-columns: minmax(500px, .6fr);
 	}
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: 400px;
 		grid-auto-rows: 400px;
 	}
@@ -396,7 +434,7 @@ footer {
 	.main__advantages {
 		grid-template-columns: minmax(400px, .6fr);
 	}
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: 350px;
 		grid-auto-rows: 350px;
 	}
@@ -432,7 +470,7 @@ footer {
 	.main__advantages {
 		grid-template-columns: minmax(300px, .6fr);
 	}
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: 300px;
 		grid-auto-rows: 300px;
 	}
@@ -465,7 +503,7 @@ footer {
 	.main__advantages {
 		grid-template-columns: minmax(260px, .6fr);
 	}
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: 260px;
 		grid-auto-rows: 260px;
 	}
@@ -495,7 +533,7 @@ footer {
 	.main__advantages {
 		grid-template-columns: minmax(200px, .6fr);
 	}
-	.main__attractions {
+	.main__attractions, .main__opinions {
 		grid-template-columns: 200px;
 		grid-auto-rows: 200px;
 	}
