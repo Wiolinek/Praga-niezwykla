@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link href="/Praga-niezwykla/styles/style_1.css" rel="stylesheet">
-    <link href="/Praga-niezwykla/styles/cart.css" rel="stylesheet">
+    <link href="/styles/style_1.css" rel="stylesheet">
+    <link href="/styles/cart.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cd128beae1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -36,9 +36,11 @@
                 <li class="cart__item">
                     <p>Kostka Cukru, czyli osłódź sobie życie</p>
                     <div class="cart__item--quantities">
-                        <button><i class="fas fa-minus"></i></button>
-                        <p>1</p>
-                        <button><i class="fas fa-plus"></i></button>
+                        <div class="cart__item--change-quantities-btns">
+                            <button><i class="fas fa-minus"></i></button>
+                            <p>1</p>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
                         <p>79 PLN</p>
                         <button><i class="fas fa-trash-alt"></i></button>
                     </div> 
@@ -46,22 +48,21 @@
                 <li class="cart__item">
                     <p>Kde Domov Můj, czyli to co dała czeska ziemia</p>
                     <div class="cart__item--quantities">
-                        <button><i class="fas fa-minus"></i></button>
-                        <p>2</p>
-                        <button><i class="fas fa-plus"></i></button>
+                        <div class="cart__item--change-quantities-btns">
+                            <button><i class="fas fa-minus"></i></button>
+                            <p>2</p>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
                         <p>99 PLN</p>
                         <button><i class="fas fa-trash-alt"></i></button>
-                    </div> 
+                    </div>  
                 </li>
             </ul>
-            <!-- <div class="cart__send-order"><button><i class="fas fa-paper-plane"></i>WYŚLIJ ZAMÓWIENIE</button></div> -->
+            <p class="cart__total-amount">Do zapłaty: <span>277 PLN</span></p>
             <div class="cart__buttons-section">
-                <div class="cart__back-to-products"><button><a href="our-boxes.html">PRZEGLĄDAJ DALEJ</a></button></div>
-                <div class="cart__send-order"><button>WYŚLIJ ZAMÓWIENIE</button></div>
+                <div class="cart__back-to-products"><a href="our-boxes.html">Przeglądaj dalej</a></div>
+                <div class="cart__send-order"><button>Wyślij zamówienie</button></div>
             </div>
-            <form>
-                <!-- <label><input type="email"></label> -->
-            </form>
         </article> 
     </section>
     <footer>
