@@ -1,6 +1,7 @@
 .walks__walks-list {
 	display: grid;
 	grid-template-columns: minmax(400px, 1fr);
+	grid-auto-rows: min-content;
 	grid-gap: 16em;
 	justify-content: center;
 	align-items: center;
@@ -60,6 +61,7 @@
 	cursor: pointer;
 	align-self: flex-end;
 	transition: background-color .5s;
+	text-decoration: none;
 }
 
 .walks__walk-item--reserve-btn:hover {
@@ -98,31 +100,10 @@
 	margin-top: 1.6rem;
 }
 
-
-@media (min-width: 1641px) {
-
-}
-
-@media (max-width: 1640px) {
-
-}
-
-@media (min-width: 1281px) {
-
-}
-
 @media (max-width: 1280px) {
 	.walks__walk-item--photo-container {
 		margin: 0 auto;
 	}
-}
-
-@media (max-width: 1024px) {
-
-}
-
-@media (max-width: 768px) {
-
 }
 
 @media (max-width: 640px) {
