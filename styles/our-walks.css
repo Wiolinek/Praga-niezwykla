@@ -9,19 +9,19 @@
 }
 
 .walks__walk-item {
-	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, .6fr));
 	grid-auto-rows: min-content;
 	grid-gap: 2em;
 	justify-content: center;
+	list-style: none;
 }
 
 .walks__walk-item--photo-container {
+	position: relative;
 	width: 470px;
 	height: 700px;
 	background-size: cover;
-	position: relative;
 	background-repeat: no-repeat;
 }
 
@@ -51,18 +51,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	align-self: flex-end;
 	font-size: 1.5em;
 	font-family: var(--primary-font-family);
+	text-decoration: none;
+	text-transform: uppercase;
 	color: black;
 	padding: .5em 1.5em;
-	background-color: transparent;
 	border: 2px solid var(--secondary-color);
+	background-color: transparent;
 	outline: none;
-	text-transform: uppercase;
 	cursor: pointer;
-	align-self: flex-end;
 	transition: background-color .5s;
-	text-decoration: none;
 }
 
 .walks__walk-item--reserve-btn:hover {

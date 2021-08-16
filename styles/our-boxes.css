@@ -8,22 +8,22 @@
 }
 
 .boxes__box-item {
-	list-style: none;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, .5fr));
 	grid-auto-rows: min-content;
 	grid-auto-flow: dense;
 	grid-gap: 2em;
 	justify-content: center;
+	list-style: none;
 }
 
 .boxes__box-item--photo-container {
+	position: relative;
+	object-position: right bottom;
+	object-fit: none;
 	width: 470px;
 	height: 700px;
-	object-fit: none;
 	background-size: cover;
-	object-position: right bottom;
-	position: relative
 }
 
 .boxes__box-item--photo-container::before {
@@ -52,21 +52,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	align-self: flex-end;
 	font-size: 1.5em;
 	font-family: var(--primary-font-family);
-	padding: .5em 1.5em;
-	background-color: transparent;
-	border: 2px solid var(--secondary-color);
-	outline: none;
 	text-transform: uppercase;
+	padding: .5em 1.5em;
+	border: 2px solid var(--secondary-color);
+	background-color: transparent;
+	outline: none;
 	cursor: pointer;
-	align-self: flex-end;
 	transition: background-color .5s;
 }
 
 a.add-to-cart-btn {
-	color: black;
 	text-decoration: none;
+	color: black;
 }
 
 .add-to-cart-btn:hover {

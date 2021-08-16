@@ -24,7 +24,7 @@ const ProductsList = {
                             <h2>${product.name}</h2>
                             <p>${product.description}</p>
                             <div class="boxes__box-price"><p>${product.price} PLN</p>
-                                <a class="add-to-cart-btn" href="/Praga-niezwykla/pages/contact.html"></a>
+                                <a class="add-to-cart-btn" href="/Praga-niezwykla/pages/contact.html">Zamów</a>
                             </div>
                         </div>
                     </li>`
