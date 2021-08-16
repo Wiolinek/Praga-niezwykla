@@ -53,6 +53,7 @@
 	justify-content: center;
 	font-size: 1.5em;
 	font-family: var(--primary-font-family);
+	color: black;
 	padding: .5em 1.5em;
 	background-color: transparent;
 	border: 2px solid var(--secondary-color);
