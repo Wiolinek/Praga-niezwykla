@@ -240,6 +240,7 @@ nav {
 	text-align: center;
 	padding: 1rem;
 	position: relative;
+	border: 2px solid var(--secondary-color);
 }
 
 .main__opinions-item::before {
@@ -252,7 +253,6 @@ nav {
 	font-family: FontAwesome;
 	font-size: 7em;
 	content: "\f10e";
-	background-color: var(--secondary-color);
 	padding: .2em;
 	opacity: .2;
 }
